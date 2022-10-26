@@ -10,7 +10,10 @@
 body {
   display: grid;
   grid-gap: 25px;
-  grid-template-rows: repeat(3 1fr); }
+  grid-template-rows: repeat(3 1fr);
+  position: absolute;
+  padding-left: 10%;
+  padding-top: 20px; }
 
 .dark-theme {
   display: grid;
@@ -47,19 +50,24 @@ body {
   .quote-box__quote-author {
     text-align: center;
     font-size: 2em; }
-  @media (--max-width: 680px) {
-    .quote-box__author-image {
-      align-self: flex-end; } }
-  .quote-box__author-image img {
-    margin-top: -1em;
-    margin-left: -15em;
-    border: var(--border);
-    box-shadow: var(--box-shadow); }
-    @media (max-width: 680px) {
-      .quote-box__author-image img {
-        border-radius: 100%;
-        box-shadow: initial;
-        width: 80px; } }
+  .quote-box__author-image {
+    position: relative; }
+    @media (--max-width: 680px) {
+      .quote-box__author-image {
+        align-self: flex-end; } }
+    .quote-box__author-image img {
+      margin-top: -1em;
+      margin-left: -15em;
+      border: var(--border);
+      box-shadow: var(--box-shadow); }
+      @media (max-width: 680px) {
+        .quote-box__author-image img {
+          border-radius: 100%;
+          box-shadow: initial;
+          width: 100px;
+          position: absolute;
+          bottom: 60px;
+          right: 200px; } }
 
 h1,
 h2,
