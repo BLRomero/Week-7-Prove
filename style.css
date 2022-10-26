@@ -12,8 +12,11 @@ body {
   grid-gap: 25px;
   grid-template-rows: repeat(3 1fr);
   position: absolute;
-  padding-left: 10%;
+  padding-left: 20%;
   padding-top: 20px; }
+  @media (max-width: 680px) {
+    body {
+      padding: 0; } }
 
 .dark-theme {
   display: grid;
@@ -52,7 +55,7 @@ body {
     font-size: 2em; }
   .quote-box__author-image {
     position: relative; }
-    @media (--max-width: 680px) {
+    @media (max-width: 680px) {
       .quote-box__author-image {
         align-self: flex-end; } }
     .quote-box__author-image img {
